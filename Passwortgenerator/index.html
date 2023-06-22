@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Passwortkarte</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Passwortkarte Generator</h1>
+    <form onsubmit="event.preventDefault(); createPasswordCard();">
+        <label for="rows">Zeilenanzahl (1-99): </label>
+        <input type="number" id="rows" min="1" max="99" required>
+        <button type="submit">Karte erstellen</button>
+    </form>
+    <table id="passwordCard">
+        <tr>
+            <th></th>
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+            <th>D</th>
+            <th>E</th>
+            <th>F</th>
+            <th>G</th>
+            <th>H</th>
+            <th>I</th>
+            <th>J</th>
+            <th>K</th>
+            <th>L</th>
+            <th>M</th>
+            <th>N</th>
+            <th>O</th>
+            <th>P</th>
+            <th>Q</th>
+            <th>R</th>
+            <th>S</th>
+            <th>T</th>
+            <th>U</th>
+            <th>V</th>
+            <th>W</th>
+            <th>X</th>
+            <th>Y</th>
+            <th>Z</th>
+        </tr>
+        <tr><th>1</th></tr>
+        <tr><th>2</th></tr>
+        <tr><th>3</th></tr>
+        <tr><th>4</th></tr>
+        <tr><th>5</th></tr>
+        <tr><th>6</th></tr>
+        <tr><th>7</th></tr>
+        <tr><th>8</th></tr>
+        <tr><th>9</th></tr>
+        <tr><th>10</th></tr>
+    </table><br>
+    <button onclick="printPasswordCard()">Passwortkarte drucken</button>
+    <script src="script.js"></script>
+</body>
+</html>
